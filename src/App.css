@@ -25,4 +25,16 @@ h1 {
 #preview {
   border: 1px solid black;
   height: 400px;
+  text-align: left;
+  padding: 1rem;
+  overflow: auto;
+}
+
+pre, code {
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+pre {
+  padding: 0.5rem;
 }
