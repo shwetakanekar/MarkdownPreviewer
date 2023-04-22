@@ -20,6 +20,7 @@ h1 {
 #editor {
   width: 100%;
   height: 400px;
+  resize: none;
 }
 
 #preview {

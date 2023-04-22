@@ -5,10 +5,40 @@ import DOMPurify from 'dompurify'; // sanitizes the HTML string
 import parse from 'html-react-parser'; // converts HTML string to react element
 
 import './App.css';
+import reactLogo from './assets/react.svg';
 
 function App() {
-  const [editorText, setEditorText] = useState('## Hello World');
+  const initialText = `
+# Header
+## Sub header
+Link to my [github](https://github.com/shwetakanekar) account
 
+Here is some inline code, \`<div>Hello World</div>\`
+
+And a block of code,
+\`\`\`
+// this is multi-line code:
+
+function greet(name) {
+  return 'Hello' + name;
+}
+
+greet('John');
+\`\`\`
+
+Here is a **list**:
+- List item 1
+- List item 2
+- List item 3
+
+Block quote
+> This is a Block Quotes.
+
+This project is built using ![React](${reactLogo} "React")
+`;
+
+  const [editorText, setEditorText] = useState(initialText);
+  // a header (H1 size), a sub header (H2 size), a link, inline code, a code block, a list item, a blockquote, an image, and bolded text
   const handleEditorTextChange = (event) => {
     setEditorText(event.target.value);
   };
