@@ -8,8 +8,7 @@ import './App.css';
 import reactLogo from './assets/react.svg';
 
 function App() {
-  const initialText = `
-# Header
+  const initialText = `# Header
 ## Sub header
 Link to my [github](https://github.com/shwetakanekar) account
 
@@ -32,7 +31,7 @@ Here is a **list**:
 - List item 3
 
 Block quote
-> This is a Block Quotes.
+> This is a Block Quote.
 
 This project is built using ![React](${reactLogo} "React")
 `;

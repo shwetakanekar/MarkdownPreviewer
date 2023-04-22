@@ -17,10 +17,19 @@ h1 {
   width: 50%;
 }
 
+#editor-section > h2, #preview-section > h2 {
+  background-color: #666;
+  color: white;
+  padding: 0.4rem;
+}
+
 #editor {
   width: 100%;
   height: calc(80vh - 100px);
   resize: none;
+  padding: 1rem;
+  outline: none;
+  border: 2px solid #666;
 }
 
 #preview {
@@ -29,6 +38,7 @@ h1 {
   text-align: left;
   padding: 1rem;
   overflow: auto;
+  border: 2px solid #666;
 }
 
 pre, code {
@@ -48,4 +58,18 @@ pre {
   #editor-section, #preview-section {
     width: 100%;
   }
+}
+
+li {
+  margin-left: 1rem;
+}
+
+blockquote {
+  margin-left: 1rem;
+}
+
+blockquote>p::before {
+  content: '|';
+  font: 1.5rem sans-serif;
+  margin-right: 5px;
 }
